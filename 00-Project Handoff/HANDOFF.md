@@ -115,9 +115,12 @@ File naming for new courses: `<TRACK>-L<level>_<Name>` (e.g. `ECOM-L1_..._Bluepr
 
 ## 10. Working rules for the AI session
 
+- **GROUNDING RULE (most important):** write course content ONLY from files in `01-Learning Knowledge/` and the user's own words. Never invent statistics, readings, case studies, or tool claims. If information is missing, ask or mark `[TO CONFIRM]`. Outline with sources first, get approval, then write.
+- **FORMAT RULE:** course documents follow the approved formats in `01-Learning Knowledge/format references/` (government execution document + formal syllabus V–VIII). Simple bullets and session tables — no extra sections, no consultant frameworks.
 - Write for a **government funding submission audience** when producing official docs: measured claims, QF terminology, no hype.
 - Write for **HK adult learners** when producing course/marketing material: concrete use cases, before/after time savings, Cantonese-friendly phrasing acceptable.
 - Keep the **Theory → Demo → Practice** split in anything session-level.
 - Never position the programme as a clone of Steven's course; frame as *accredited, data-driven, free* superset. Consider practitioners like him as potential guest speakers.
-- All credit math must reconcile to 120 credits / 1,200 NLH / 360 contact hours.
+- All credit math must reconcile to 120 credits / 1,200 NLH / 360 contact hours (for the L3 diploma; other courses have their own totals — always reconcile).
 - John prefers **concise, direct** communication.
+- The `course-development` skill (v4, in `04-Skills/`) is **general-purpose** — it works for ANY course topic and any AI agent (Claude, Codex, etc.). Project-specific conventions (tracks/levels matrix, naming, tone) live in THIS file, not in the skill.

@@ -19,15 +19,17 @@ This creates the `AI-Agent-Course-Development` folder with everything in it.
 
 **Claude Cowork (desktop app):**
 1. Start a session and connect the `AI-Agent-Course-Development` folder.
-2. First message: `Read 00-Project Handoff/HANDOFF.md first, then let's continue the course development.`
-3. To install the project skill: drag `04-Skills/course-development.skill` into the chat and click **Save skill**. After that, typing `start skill` runs the full course-development pipeline.
+2. One-time: install the skill — drag `04-Skills/course-development.skill` into the chat and click **Save skill**.
+3. Every time you open this repo, your FIRST message is: `start skill`
 
-**Claude Code (terminal):**
+The procedure then runs by itself: asks which course/program to work on (any topic) → reads ONLY the knowledge in `01-Learning Knowledge` → asks your output language → produces the three deliverables — course execution document + formal syllabus (into `02-Course Blueprint`) and Excel timetable (into `03-Schedules`).
+
+**Claude Code / other AI (terminal):**
 ```
 cd AI-Agent-Course-Development
 claude
 ```
-Then say: `Read "00-Project Handoff/HANDOFF.md" first, then let's continue the course development.`
+First message: `Read "04-Skills/course-development-SKILL.md" and follow its procedure.` (Works in Codex or other agents too — the skill file is plain text with fallback instructions.)
 
 ## Folder guide
 
