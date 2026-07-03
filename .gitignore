@@ -1,0 +1,10 @@
+# Private - keep the folders on GitHub but not the files inside
+01-Learning Knowledge/*
+!01-Learning Knowledge/.gitkeep
+02-Course Blueprint/*
+!02-Course Blueprint/.gitkeep
+
+# System junk
+Thumbs.db
+Desktop.ini
+~$*
