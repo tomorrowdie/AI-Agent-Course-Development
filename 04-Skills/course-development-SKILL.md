@@ -62,11 +62,24 @@ Gather every fact before touching deliverables:
 
 The teardown does double duty: weaknesses become the new course's differentiators, and strengths become marketing patterns to adopt (concrete use cases, time-saved numbers, identity narrative).
 
+## Product matrix — tracks & levels
+
+The business runs a portfolio of courses, not one course. Every new course concept must be placed in the matrix before designing, because level determines depth, template, and price point, and each level's job is to sell the next (masterclass → L1 → L2 → L3):
+
+**Tracks:** AI Agent · E-commerce · Hybrid (AI × E-commerce — the flagship, uses proprietary data)
+
+**Levels — defined by outcome, not hours:**
+- **L1 Foundation** (~6–15 contact hrs): can use AI tools on guided tasks. Deliberately shallow — leaves room for L2 upsell. No prerequisites.
+- **L2 Practitioner** (~30–60 contact hrs): can independently build a strategy/portfolio/deliverable. Portfolio project required.
+- **L3 Professional** (credit-bearing, e.g. 120-credit QF L5): can build complete systems; earns the credential; funding-submission grade.
+
+File naming: `<TRACK>-L<level>_<Name>` — e.g. `ECOM-L1_AI_Ecommerce_Starter_Blueprint.docx`, `AI-L1_Agent_Bootcamp_Schedule.xlsx`. Keep one portfolio-matrix table in HANDOFF.md showing which cells are built and which are gaps — update it whenever a course is added.
+
 ## Phase 2 — Interview the program lead
 
 Use the AskUserQuestion tool in 2–3 short rounds (not one giant round). Cover, in roughly this order:
 
-**Round 1 — context:** primary audience(s); the user's role and mandate (designer? program lead? consultant?); the transformation students should achieve; relationship to competitors found in Phase 1 (template / rival / partner).
+**Round 1 — context:** track and level in the product matrix (AI / E-commerce / Hybrid × L1/L2/L3) — check HANDOFF's portfolio matrix for gaps and adjacent courses first; primary audience(s); the user's role and mandate; the transformation students should achieve; relationship to competitors found in Phase 1 (template / rival / partner).
 
 **Round 2 — structure:** format and duration (short course vs credit-bearing programme); accreditation/funding requirements (credits, QF/EQF level, contact-hour rules); domain focus vs general; tools/budget realistically available to students.
 
@@ -79,7 +92,13 @@ Rules of thumb:
 
 ## Phase 3 — Programme blueprint (.docx)
 
-Read the docx skill's SKILL.md before building. Output to `02-Course Blueprint/<Course_Name>_Blueprint.docx`.
+Read the docx skill's SKILL.md before building. Output to `02-Course Blueprint/<TRACK>-L<level>_<Course_Name>_Blueprint.docx`.
+
+Pick the template by level:
+
+**Short-course template (L1 / L2, non-credit):** lighter document — course positioning & rationale; total hours and module table (modules × hours); learning outcomes; per-module detail with THEORY / DEMO / PRACTICE / Student Output rows; final project or portfolio; tools required; upsell path (which matrix cell this course feeds into). Bilingual (EN + Chinese) if the audience is HK/mainland. An L1 course must stay tool-operation level — if module outcomes read like independent strategy-building, that's L2 content; push it up or cut it.
+
+**Credit-bearing template (L3, funding-grade):** the full structure below, with reconciled credit math.
 
 ### Credit & hours math (must reconcile — verify before delivering)
 
@@ -91,7 +110,7 @@ For credit-bearing programmes use the local qualification framework convention (
 
 For short courses/bootcamps: total contact hours per day (~6h with lunch), map each block to the same Theory/Demo/Practice pattern.
 
-### Required blueprint sections
+### Required blueprint sections (credit-bearing / L3)
 
 1. **Executive Summary** — programme in one page: size, structure, duration, delivery, differentiators
 2. **Positioning & Competitive Differentiation** — competitor teardown table (them vs us), what we deliberately adopt from them, one-line positioning statement
@@ -126,4 +145,34 @@ Read the xlsx skill's SKILL.md before building. Output to `03-Schedules/`. If th
 | J | Real-World Application |
 
 - If the audience is bilingual, mirror the sheet in the second language (e.g. English + Chinese sheets) with identical structure.
-- I
+- Include a "Things Need Before Classes" checklist sheet: accounts created/tested, hardware ready, dataset access granted, platform instances running, materials pack, pre-course survey sent.
+- Every session block should end in a Deliverable — students leave each block with something built. Blocks without deliverables are lecture filler; challenge them.
+- Sanity-check the hours: blocks per day must sum to the day's contact hours; total must match the blueprint's contact-hour commitment for whatever slice of the programme this schedule covers.
+
+## Phase 5 — Handoff & sell
+
+1. Create or update `00-Project Handoff/HANDOFF.md` with: who's involved, the project in one paragraph, a **Decisions already made (DO NOT re-ask)** table, the unfair advantage, competitor summary, curriculum table, the product portfolio matrix, folder structure, open next steps, and working rules (tone per audience, credit math invariants).
+2. Update the folder-structure section whenever files move.
+3. If the user is ready to sell: draft the lead-magnet masterclass outline and landing copy into `05-Marketing/`, borrowing the competitor's proven mechanics (concrete use cases with before/after numbers, identity transformation narrative, honest scarcity) while leading with the differentiators (credential, funding/free, proprietary assets).
+
+## Export & clean structure rule
+
+Every output must land in its stage folder — never leave deliverables in the chat, a scratchpad, or the folder root:
+
+| Output | Destination |
+|---|---|
+| Filed knowledge, competitor teardowns | `01-Learning Knowledge/` |
+| Programme blueprint .docx | `02-Course Blueprint/` |
+| Schedule .xlsx | `03-Schedules/` |
+| Skills / automation assets | `04-Skills/` |
+| Marketing copy, masterclass scripts | `05-Marketing/` (create when reached) |
+| Funding/accreditation documents | `06-Submission/` (create when reached) |
+
+If multiple course concepts share one project, prefix files with the concept name so folders stay sortable. At the end of a run, list the final folder tree so the user sees the structure is clean, and update HANDOFF.md's folder section to match.
+
+## Working style
+
+- Concise and direct; the user is a busy program lead, not a developer.
+- Present every deliverable file when done (present_files), with a two-sentence summary — not an essay.
+- Flag scope mismatches immediately (e.g. a 2-day schedule cannot deliver a 120-credit programme — name it as the pilot/bootcamp version and proceed).
+- All numbers must reconcile: credits × 10 = NLH; module hours × modules = totals; schedule hours = blueprint commitment.

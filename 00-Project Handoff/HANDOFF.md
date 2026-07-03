@@ -91,6 +91,18 @@ D:\PycharmProjects\PythonProject\033-AI-Agent-Course-Development\
 
 **Convention:** file new materials by stage number — research into `01`, design docs into `02`, schedules into `03`, skills into `04`; create `05-Marketing`, `06-Submission`, etc. as the project grows.
 
+## 8b. Product portfolio matrix (tracks × levels)
+
+The business runs a course portfolio; every course slots into this matrix. Levels are defined by outcome: L1 = use AI tools on guided tasks; L2 = independently build a strategy/portfolio; L3 = build systems + credential. Each level sells the next (masterclass → L1 → L2 → L3).
+
+| Level | AI Agent track | E-commerce track | Hybrid track |
+|---|---|---|---|
+| L1 Foundation | 2.5-day bootcamp ✅ (`03-Schedules`) | **GAP — assigned to partner, build next** (~15h, tool-operation level, subset of the L2 course, deliberately shallow to leave upsell room) | Free masterclass (lead magnet, to design) |
+| L2 Practitioner | *(gap, optional)* | 30h Brand Internationalization ✅ (`02-Course Blueprint/HKU_SPACE_AI_Brand_Internationalization_Blueprint.docx`) | *(gap)* |
+| L3 Professional | — | — | 120-credit QF L5 diploma ✅ (`02-Course Blueprint/AI_Course_Programme_Blueprint.docx`) |
+
+File naming for new courses: `<TRACK>-L<level>_<Name>` (e.g. `ECOM-L1_..._Blueprint.docx`). Note: the L2 Brand Internationalization doc says "零基础" — treat that as "no prerequisites", not "beginner"; by outcome it is L2. Update this matrix whenever a course is added.
+
 ## 9. Next steps (open work — pick up here)
 
 1. **Confirm funding scheme specifics** — exact credit definition, contact-hour minimums, assessment rules; adjust 8×15 structure if required. *(John to supply scheme name/docs.)*
